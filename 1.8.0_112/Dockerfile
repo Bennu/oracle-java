@@ -5,8 +5,6 @@ ENV PATH $PATH:$JAVA_HOME/jre/bin:$JAVA_HOME/bin
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
-    lib32z1 \
-    lib32ncurses5 \
     ca-certificates && \
     wget --header "Cookie: oraclelicense=accept-securebackup-cookie;" \
          "http://download.oracle.com/otn-pub/java/jdk/8u112-b15/jdk-8u112-linux-x64.tar.gz" && \
