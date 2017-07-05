@@ -9,7 +9,7 @@ RUN dpkg --add-architecture i386 && apt-get update && apt-get install -y --no-in
     libc6:i386 \
     libxt6:i386 \
     libxtst6:i386 \
-    libxext6:i386 \
+    libxext6:i386 && \
     rm -rf /var/lib/apt/lists/* && \
     wget --header "Cookie: oraclelicense=accept-securebackup-cookie;" \
               "http://download.oracle.com/otn-pub/java/j2sdk/1.4.2_19/j2sdk-1_4_2_19-linux-i586.bin" && \
